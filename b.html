@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Login page</title>
+    </head>
+    <body>
+        <h1> Login </h1>
+        <form name="login">
+            email<input type="text" name="email"/><br><br>
+            
+            Password<input type="password" name="pswrd"/><br><br>
+            <h6><u>forgot your password?</u></h6>
+            <h6>
+				<hr>
+				
+         <input type="button" onclick="check(this.form)" value="Login"/>
+            <h6>no account?<u>register now</u></h6>
+            
+        </form>
+         <input bgcolor="green" type="button" name ="text" value="f connect with facebook"/>
+        <script language="javascript">
+            function check(form) { /*function to check userid & password*/
+                /*the following code checkes whether the entered userid and password are matching*/
+                if(form.userid.value == "myuserid" && form.pswrd.value == "mypswrd") {
+                    window.open('target.html')/*opens the target page while Id & password matches*/
+                }
+                else {
+                    alert("Error Password or Username")/*displays error message*/
+                }
+            }
+        </script>
+
